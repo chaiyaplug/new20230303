@@ -1,0 +1,234 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+   
+
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4" type="video/mp4" />
+    </video>
+    <header class="header">
+
+        <nav class="napbar">
+            <span class="napbarbrand"><img width="150" height="150"
+                    src="https://www.shutterstock.com/image-vector/colors-font-alphabet-letters-modern-600w-1992498650.jpg"></img>
+
+            </span>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#section1" style="text-decoration: none;">ติดตั้ง</a></li>
+                    <li>ลงทะเบียน</li>
+                    <li>ออกแบบ</li>
+                    <li>ติดต่อ</li>
+                </ul>
+            </div>
+            <!-- <button  onclick="myFunction()" class="hamburger" id="myDIV">edwadawdwad</button> -->
+            <button onclick="myFunction()" class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+
+
+        </nav>
+
+
+
+        <div id="idmenu">
+            <ul class="menu2">
+                <span onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <li>ติดตั้ง
+                        <i class="arrow " onclick="submenu2(this)" id="submenu2_1"></i>
+                    </li>
+                    <ul class="submenu2">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </span>
+                <span onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <li>ลงทะเบียน</li>
+                </span>
+                <span onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <li>ออกแบบ</li>
+                </span>
+                <span onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                    <li>ติดต่อ</li>
+                </span>
+
+            </ul>
+        </div>
+    </header>
+    <div class="container" id="container">
+
+        <section class="topsection">
+            <ul class="pointer">
+                <li id="1"></li>
+                <li id="2"></li>
+                <li id="3"></li>
+                <li id="4"></li>
+                <li id="5"></li>
+                <li id="6"></li>
+                <li id="7"></li>
+                <li id="8"></li>
+            </ul>
+            <div class="carousel" >
+                <img id="new1"  
+                    src="https://www.shutterstock.com/image-vector/colors-font-alphabet-letters-modern-600w-1992498650.jpg" ></img>
+                <img id="new2"
+                    src="https://i.pinimg.com/736x/65/f1/09/65f10929f8577b0cb6d0a166f9251ff4.jpg"></img>
+                <img id="new3"
+                    src="https://i.pinimg.com/564x/61/1e/a2/611ea2745559eff654363385ef94650b.jpg"></img>
+                <img id="new4"
+                    src="https://i.pinimg.com/564x/b0/a1/50/b0a1501fc543afd2ba1fd2c509129d20.jpg"></img>
+                <img id="new5"
+                    src="https://i.pinimg.com/564x/84/88/ad/8488ade663031be0c24de059478f824c.jpg"></img>
+                    <img id="new6"
+                    src="https://i.pinimg.com/564x/6f/1e/d6/6f1ed6c78d600b9a76533924b69bd7a9.jpg"></img>
+                    <img id="new7"
+                    src="https://i.pinimg.com/564x/ec/cf/c7/eccfc73ca96ed451e8cc6305e4cffd1d.jpg"></img>
+                    <img id="new8"
+                    src="https://i.pinimg.com/564x/a3/f6/a9/a3f6a95fbc72d292159fa99cc173536e.jpg"></img>
+
+                   
+            </div>
+        </section>
+        <section class="cardcontent">
+            <span class="cardobject" data-tilt data-tilt-glare data-tilt-max-glare="0.2"> <img
+                    src="https://static.thairath.co.th/media/dFQROr7oWzulq5FZUIVNrgcAuSEVpmdZwKSC23KlKAEMNBbMBJ7GEvpfzId6osBXpwm.jpg"></img>
+
+            </span>
+            <span class="cardobject" data-tilt data-tilt-glare data-tilt-max-glare="0.2"><img
+                    src="https://www.bot.or.th/Thai/PublishingImages/share/sustainable-tourism.jpg"></img></span>
+            <span class="cardobject" data-tilt data-tilt-glare data-tilt-max-glare="0.2"><img
+                    src="https://cucreativetourismias.files.wordpress.com/2019/03/e0b8a7e0b8b1e0b894e0b8ade0b8a3e0b8b8e0b8a3.jpg"></img></span>
+
+        </section>
+        <article>
+            <section>
+                <div class="containerSection">
+                    <div class="section1" id="section1">
+                        <!-- <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a> -->
+                        <a href="#section3">
+                            <h1>PAGE 1 </h1>
+                        </a>
+                    </div>
+                    <div class="section2" id="section2">
+                        <a href="#section1"></a>
+                    </div>
+                    <div class="section3" id="section3">
+                        <a href="#section1">
+                            <h1>PAGE 2 </h1>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+        </article>
+        <div class="col-1">
+            <img id="myImg"
+                src="https://www.shutterstock.com/image-vector/colors-font-alphabet-letters-modern-600w-1992498650.jpg"
+                width="304" height="228">
+        </div>
+
+    </div>
+    <footer>
+
+
+        <div>
+            <p class="footer-left-article">วิธีการใช้บริการระบบ สุ่มออนไลน์</p>
+            <p class="footer-left">ด้านการใช้งาน โปรแกรมสุ่มออนไลน์ นี้ก็สามารถใช้งานได้ง่ายๆ
+                เพียงแค่ใส่ค่ากำหนดช่วงของตัวเลขที่ต้องการจะให้มันสุ่ม ใส่ค่าลงในช่อง สุ่มตัวเลขจาก (From Number)
+                และช่อง สุ่มถึงตัวเลข (To Number) แล้วกดปุ่มสุ่มตัวเลข หรือ ปุ่ม "Random" ก็เป็นอันเสร็จพิธี
+                โดยค่าเริ่มต้น (Default Value) ที่เรากำหนดเอาไว้ให้คือ 1 ถึง 100
+                ซึ่งผู้ใช้งานสามารถปรับเปลี่ยนช่วงของตัวเลขได้อย่างอิสระ</p>
+            <p class="footer-left">นอกจากนี้ระบบของเรายังมีออปชั่น "Unique Number" ให้เลือก หากเป็นการ สุ่มตัวเลขจับฉลาก
+                ของรางวัล หรือ การสุ่มตัวเลขเพื่อเรียกคนออกมาตอบคำถาม หรือ เล่นเกมส์ต่างๆ
+                ซึ่งค่าตัวเลขดังกล่าวที่สุ่มออกมานั้น จะต้องไม่มีวันกลับมาซ้ำอีก เหมือนกับเราหยิบฉลากออกมาจากขวดโหล หรือ
+                กล่องใส่ฉลาก แล้วต้องวางฉลากข้างนอก ไม่ทิ้งใส่ขวดโหลอีก ก็สามารถทำได้ด้วยการเลือกออปชั่นนี้เช่นกัน</p>
+            <p class="footer-left">ความสามารถ "List All Number" คือการแสดงตัวเลขทั้งหมดโดยทันที
+                ไม่ต้องกดปุ่มสุ่มตัวเลขทีละครั้ง เพื่อให้ได้ตัวเลขที่สุ่มออกมาทีละตัว
+                ออปชั่นนี้จะช่วยประหยัดเวลาให้กับผู้ดำเนินรายการ ไปได้มากเลยทีเดียว ซึ่งก็อยู่ที่ความต้องการของแต่ละท่าน
+            </p>
+
+        </div>
+        <div>
+            <p class="footer-left-article">สุ่มตัวอักษรภาษาไทย (Random Thai Alphabet Generator) คืออะไร ?</p>
+            <p class="footer-left">ด้านการใช้งาน โปรแกรมสุ่มออนไลน์ นี้ก็สามารถใช้งานได้ง่ายๆ
+                เพียงแค่ใส่ค่ากำหนดช่วงของตัวเลขที่ต้องการจะให้มันสุ่ม ใส่ค่าลงในช่อง สุ่มตัวเลขจาก (From Number)
+                และช่อง สุ่มถึงตัวเลข (To Number) แล้วกดปุ่มสุ่มตัวเลข หรือ ปุ่ม "Random" ก็เป็นอันเสร็จพิธี
+                โดยค่าเริ่มต้น (Default Value) ที่เรากำหนดเอาไว้ให้คือ 1 ถึง 100
+                ซึ่งผู้ใช้งานสามารถปรับเปลี่ยนช่วงของตัวเลขได้อย่างอิสระ</p>
+            <p class="footer-left">นอกจากนี้ระบบของเรายังมีออปชั่น "Unique Number" ให้เลือก หากเป็นการ สุ่มตัวเลขจับฉลาก
+                ของรางวัล หรือ การสุ่มตัวเลขเพื่อเรียกคนออกมาตอบคำถาม หรือ เล่นเกมส์ต่างๆ
+                ซึ่งค่าตัวเลขดังกล่าวที่สุ่มออกมานั้น จะต้องไม่มีวันกลับมาซ้ำอีก เหมือนกับเราหยิบฉลากออกมาจากขวดโหล หรือ
+                กล่องใส่ฉลาก แล้วต้องวางฉลากข้างนอก ไม่ทิ้งใส่ขวดโหลอีก ก็สามารถทำได้ด้วยการเลือกออปชั่นนี้เช่นกัน</p>
+            <p class="footer-left">ความสามารถ "List All Number" คือการแสดงตัวเลขทั้งหมดโดยทันที
+                ไม่ต้องกดปุ่มสุ่มตัวเลขทีละครั้ง เพื่อให้ได้ตัวเลขที่สุ่มออกมาทีละตัว
+                ออปชั่นนี้จะช่วยประหยัดเวลาให้กับผู้ดำเนินรายการ ไปได้มากเลยทีเดียว ซึ่งก็อยู่ที่ความต้องการของแต่ละท่าน
+            </p>
+
+        </div>
+        <div>
+            <p class="footer-left-article">สถิติการสุ่มค่าของ ระบบสุ่มตัวอักษรภาษาไทย (Random Thai Alphabet Generator)
+            </p>
+
+            <div class="displayIcon">
+                <span><a href="http://www.facebook.com"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                </span>
+                <span><a class="pinterest" href="http://www.pinterest.com"><i class="fa fa-pinterest fa-2x"
+                            aria-hidden="true"></i></a></span>
+                <span><a class="youtube" href="http://www.youtube.com"><i class="fa fa-youtube fa-2x"
+                            aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
+    <div id="container">
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+
+
+
+
+
+    </script>
+</body>
+
+
+</html>
