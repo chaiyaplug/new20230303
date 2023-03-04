@@ -98,8 +98,7 @@ body {height:1500px;}
 }
 
 .container {
-    position:absolute;
-    top:25%;
+  
     display: flex;
     justify-content: center;
     align-items: center;

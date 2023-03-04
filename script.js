@@ -109,13 +109,27 @@ Object.entries(allpointer.children).forEach((pointer) => {
             newdata.style.backgroundColor = "black";
             console.log("#new"+(parseInt(key)+1));
             // console.log('#new'+(key-1));
-            window.location.href = '#new'+((parseInt(key)+1));
+            new3.then(function(){
+                new2();
+            })
+           
+            
             // window.location.href("#new"+8);
-            carousel.scrollLeft
+          
             // alert(key);
     })
 }
 );
+async function new3(){
+    window.location.href =  await '#new'+((parseInt(key)+1));
+   await new2();
+
+}
+function new2(){
+    alert("test");
+    carousel.style.position="absolute";
+    carousel.style.top="50%";
+}
 
 carousel.addEventListener("mousedown", Mousedown);
 
@@ -123,23 +137,26 @@ function Mousedown(e) {
     prevscroll = e.pageX
 
     mousedown = e.clientX;
-    console.log("mousedown");
+    // console.log("mousedown");
     Candrag = true;
-    console.log(Candrag);
+    // console.log(Candrag);
 }
 carousel.addEventListener("mouseup", Mouseup);
 function Mouseup() {
-    console.log("mouseup");
+    // console.log("mouseup");
     Candrag = false;
-    console.log(Candrag);
+    // console.log(Candrag);
     newscroll = carousel.scrollLeft;
-    console.log(newscroll);
+    // console.log(newscroll);
 }
 
 carousel.addEventListener("mousemove", Mousemove);
 function Mousemove(e) {
-
-    e.preventDefault();
+    
+     e.preventDefault();
+    //  console.log(e.classX);
+    console.log(e.clientX);
+    //  carousel.scrollLeft=e.clientX;
     if (Candrag) {
         newmove = e.clientX;
         console.log(newmove);
