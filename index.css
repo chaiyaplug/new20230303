@@ -3,7 +3,7 @@ html {
   
 }
 
-body {height:1500px; }
+body {height:1500px;}
 
 #background-video {
     width: 100vw;
@@ -98,8 +98,8 @@ body {height:1500px; }
 }
 
 .container {
-    position:absolute;
-    top:25%;
+   
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,9 +327,9 @@ ul.pointer>li{
         height: 4px;
         width: 50px;
         position: absolute;
-        right: 10vw;
+        right: 2rem;
         top: 50%;
-        
+
     }
 
     .napbar {
@@ -342,7 +342,6 @@ ul.pointer>li{
     .napbar {
 
         display: block;
-        width: 100vw;
     }
 
 
