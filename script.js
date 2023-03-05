@@ -116,18 +116,23 @@ Object.entries(allpointer.children).forEach((pointer) => {
     })
 }
 );
-
+carousel.addEventListener("touchstart", Mousedown);
 carousel.addEventListener("mousedown", Mousedown);
+carousel.addEventListener("touchmove", Mousemove);
+ carousel.addEventListener("mousemove", Mousemove);
+carousel.addEventListener("touchend", Mouseup);
+carousel.addEventListener("mouseup", Mouseup);
+
 
 function Mousedown(e) {
-    prevscroll = e.pageX
+    prevscroll = e.pageX|| e.touches[0].pageX;
 
-    mousedown = e.clientX;
+    mousedown = e.clientX||e.touches[0].pageX;
     console.log("mousedown");
     Candrag = true;
     console.log(Candrag);
 }
-carousel.addEventListener("mouseup", Mouseup);
+
 function Mouseup() {
     console.log("mouseup");
     Candrag = false;
@@ -135,13 +140,11 @@ function Mouseup() {
     newscroll = carousel.scrollLeft;
     console.log(newscroll);
 }
-
-carousel.addEventListener("mousemove", Mousemove);
 function Mousemove(e) {
 
     e.preventDefault();
     if (Candrag) {
-        newmove = e.clientX;
+        newmove = e.clientX||e.touches[0].pageX;
         console.log(newmove);
         if (mousedown - newmove > 0) {
             carousel.scrollLeft = carousel.scrollLeft + (mousedown - newmove) * 3;
@@ -153,8 +156,6 @@ function Mousemove(e) {
 
 
 }
-
-
 window.onwheel = function (event) {
 
     var header = document.querySelector("header");

@@ -3,7 +3,7 @@ html {
   
 }
 
-body {height:1500px;}
+body {display:block;width:100vw;}
 
 #background-video {
     width: 100vw;
@@ -175,7 +175,7 @@ body {height:1500px;}
     top:65%;    
     align-items:center;
     justify-content: center;
-    
+    cursor: pointer;
 }
 ul.pointer{
     list-style-type: none;
@@ -202,7 +202,7 @@ ul.pointer>li{
 
 }
 .carousel{
-   
+    cursor: pointer;
     display:flex;
     flex-wrap: nowrap;
     width:70%;
